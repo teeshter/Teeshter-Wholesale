@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Teeshter
+ * @package     Teeshter_Wholesale
+ * @author      teeshter
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" name="title" xsi:type="string">Product Sold Report Result</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="Teeshter\Wholesale\Block\Report\Result" name="teeshter_wholesale_report_result"
+                   template="Teeshter_Wholesale::report/result.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,13 @@
+<?php
+/**
+ * Block report result template
+ *
+ * @category    Teeshter
+ * @package     Teeshter_Wholesale
+ * @author      teeshter
+ */
+
+/** @var \Teeshter\Wholesale\Block\Report\Result $block */
+?>
+<h3><?php echo $block->getProductName() ?></h3>
+<p><?php echo __('Total quantity sold:') ?> <?php echo $block->getTotalQtySold() ?></p>

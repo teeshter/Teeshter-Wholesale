@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Teeshter
+ * @package     Teeshter_Wholesale
+ * @author      teeshter
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Customer::customer">
+                    <resource id="Teeshter_Wholesale::inquiry_manage" title="Teeshter Manage Wholesale Inquiry"/>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Teeshter_Wholesale::inquiry" title="Teeshter Wholesale Inquiry Section"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

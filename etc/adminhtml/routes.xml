@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Teeshter
+ * @package     Teeshter_Wholesale
+ * @author      teeshter
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="teeshter_wholesale" frontName="teeshter_wholesale">
+            <module name="Teeshter_Wholesale"/>
+        </route>
+    </router>
+</config>

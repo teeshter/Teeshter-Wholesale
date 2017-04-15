@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Teeshter
+ * @package     Teeshter_Wholesale
+ * @author      teeshter
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Teeshter_Wholesale::inquiry_manage" title="Wholesale Inquiries"
+             module="Teeshter_Wholesale" parent="Magento_Customer::customer"
+             action="teeshter_wholesale/inquiry/index" resource="Teeshter_Wholesale::inquiry_manage"
+             sortOrder="150"/>
+    </menu>
+</config>

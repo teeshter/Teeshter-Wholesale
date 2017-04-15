@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Teeshter
+ * @package     Teeshter_Wholesale
+ * @author      teeshter
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="layout_load_before">
+        <observer name="teeshter_wholesale_observer_addnotwholesalelayouthandle"
+                  instance="Teeshter\Wholesale\Observer\AddNotWholesaleLayoutHandle" />
+    </event>
+</config>
